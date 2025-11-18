@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In • Startup Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="nav">
+          <a class="nav-brand" href="index.html" aria-label="Startup Landing Page">
+            <span class="logo-mark">SL</span>
+            <span class="logo-text">Startup Landing</span>
+          </a>
+          <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-menu">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <nav id="primary-menu" class="nav-menu" data-nav-menu>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="home-2.html">SaaS</a></li>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+              <a class="btn btn-outline" href="login.html">Log In</a>
+              <a class="btn btn-primary" href="register.html">Get Started</a>
+              <label class="dark-toggle">
+                <input type="checkbox" data-dark-toggle />
+                <span class="toggle-indicator" aria-hidden="true"></span>
+                <span class="sr-only">Enable dark mode</span>
+              </label>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="auth-section">
+      <div class="container auth-wrapper">
+        <div class="card auth-card">
+          <a class="auth-logo" href="index.html" aria-label="Startup Landing Page">
+            <span class="logo-mark">SL</span>
+            <span class="logo-text">Startup Landing</span>
+          </a>
+          <h1>Welcome back</h1>
+          <p class="auth-subtitle">Log in to manage your landing pages, experiments, and community resources.</p>
+          <form action="#" method="post">
+            <label class="form-field">
+              <span>Email address</span>
+              <input type="email" name="email" placeholder="you@startup.com" required />
+            </label>
+            <label class="form-field">
+              <span>Password</span>
+              <input type="password" name="password" placeholder="••••••••" required />
+            </label>
+            <div class="form-field" style="align-items: center; display: flex; justify-content: space-between;">
+              <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: 500;">
+                <input type="checkbox" name="remember" />
+                <span>Remember me</span>
+              </label>
+              <a href="#" style="font-weight: 600; color: var(--color-primary);">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Sign in</button>
+          </form>
+          <p class="auth-note">
+            New to Startup Landing?
+            <a href="register.html">Create an account</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
